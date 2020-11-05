@@ -11,7 +11,7 @@ searchbtn.addEventListener('click',function(searching){
 
     //clear data
     audBox.innerHTML='';
-    notFound.innerText='';
+   
     defBox.innerText='';
     
     //Get input data
