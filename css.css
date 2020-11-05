@@ -42,7 +42,10 @@ button{
 
 .words{
     width: 100%;
-    height: auto;
+    max-width: 500px;
+    max-height: 800px;
+    overflow-x: scroll;
+    overflow-y: scroll;
     background: #dcdcdc;
     padding-top: 10px;
     float:left;
