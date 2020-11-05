@@ -1,4 +1,4 @@
-let input = document.querySelector('#search').value;
+let input = document.querySelector('#search');
 let searchbtn = document.querySelector('#searchbtn');
 let apiKey= 'ecbb76a8-69b7-40e6-966d-d9a88f167d8f';
 let notFound = document.querySelector('#notFound');
@@ -10,7 +10,7 @@ searchbtn.addEventListener('click',function(searching){
     searching.preventDefault();
 
     //clear data
-    audBox.innerText='';
+    audBox.innerHTML='';
     notFound.innerText='';
     defBox.innerText='';
     
