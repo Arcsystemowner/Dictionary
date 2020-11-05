@@ -40,10 +40,10 @@ async function getData(word){
     }
 
     //if result is suggetions
-    if(typeof data[0] === 'string'){
+    if(typeof(data[0]) === 'string'){
         load.style.display ='none';
         let heading = document.createElement('h3');
-        heading.innerText = 'Do you mean?'
+        heading.innerText = 'Did you mean?'
         notFound.appendChild(heading);
         data.forEach(element => {
             let suggetions = document.createElement('span');
@@ -60,25 +60,8 @@ async function getData(word){
     let defination = data[0].shortdef[0];
     defBox.innerText = defination;
 
-    //audio
-    const soundName = data[0].hwi.prs[0].sound.audio;
-
-    if(soundName){
-        //if audio found
-        renderSound(soundName);
-    }
-
-}
-
-function renderSound(soundName){
     
-    let subfolder = soundName.charAt[0];
-    let soundSrc = `https://media.merrian-webster.com/soundc11/${subfolder}/${soundName}.wav?key=${apiKey}`;
-
-    let aud = document.createElement('audio');
-    aud.src = soundSrc;
-    aud.controls= true;
-    audBox.appendChild(aud);
-
 
 }
+
+
