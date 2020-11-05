@@ -42,7 +42,7 @@ button{
 
 .words{
     width: 100%;
-    height: 200px;
+    height: auto;
     background: #dcdcdc;
     padding-top: 10px;
     float:left;
